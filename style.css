@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: #1d2126;
+ 
+}
+.row {
+    display: flex;
+}
+.col-md-3 {
+    display: flex;
+    width: 25%;
+}
+.col-md-6 {
+    display: flex;
+    width: 50%;
+}
+.col-md-8 {
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+}
+
+.col-md-3:last-child {
+    justify-content: flex-end;
+}
+body {
+    max-width: 1900px;
+    
+}
+.conteiner {
+    max-width: 1140px;
+    margin: 0px auto;
+    
+}
+
+.logo {
+    align-self: center;
+    justify-content: start;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+li {
+    
+    list-style: none;
+    margin-top: 25px;
+    flex-flow: nowrap;
+    align-items: flex-start;
+}
+li.home {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: 3px solid #39a492;
+    border-radius: 3px;
+}
+li.home:hover {
+    color: white;
+    border: 3px solid white;
+    border-radius: 3px;
+}
+.menu li {
+  align-self: center;
+}
+
+.menu a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #a4aead;
+    text-decoration: none;
+}
+li .hom  {
+    color: #39a492
+}
+
+.menu li:hover {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #5a6068;
+    border-radius: 3px;
+    color: #a4aead;
+}
+.knopka {
+    align-self: center;
+    
+}
+.search {
+    background-color: transparent;
+    color: #a4aead;
+    text-decoration: none;
+    border: 1px solid #5a6068;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+button.lopa  {
+    background-image: url(images/icon\ \(1\).png);
+    background-color:transparent;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    border: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-left: -30px;
+}
+.slider {
+    width: 100%;
+    height: 650px;
+    background-image: url(images/img\ \(2\).png);
+    background-repeat: no-repeat;
+}
+.welcom {
+    margin-top: 200px;
+    align-self: flex-start;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 21px;
+    color: white;
+}
+
+.welcomLorem {
+    align-self: flex-start;
+    justify-content: flex-start;
+    width: 650px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.welcomButton {
+    margin-top: 10px;
+    width: 260px;
+    height: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+}
+.bt {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bt:hover {
+    background-color: #39a492;
+}
+
+/*Адаптивна версія*/
+@media (max-width: 768px){ 
+   
+.row {
+    display: flex;
+    flex-direction: column;
+}
+.col-md-3 {
+    width: 100%;
+    justify-content: center;
+}
+.col-md-6 {
+    width: 100%;
+    justify-content: center;
+}
+.logo {
+    flex-direction: row;
+    justify-self: center;
+    margin-top: 10px;
+}
+.menu {
+    width: 50%;
+    justify-content: start;
+    flex: 0 0 50%;
+    overflow-x: scroll;
+}
+.menu li {
+    align-self: center;
+  }
+  
+  .menu a {
+      padding: 5px;
+     
+       }
+
+.knopka {
+    display: none;
+}
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.welcom {
+   width: 75%;
+   justify-content: center;
+   align-self: center;
+ }
+
+.welcomLorem {
+    width: 75%;
+   justify-content: center;
+   align-self: center;
+}
+.welcomButton {
+    width: 75%;
+    justify-content: center;
+    align-self: center;
+   
+ }
+}
